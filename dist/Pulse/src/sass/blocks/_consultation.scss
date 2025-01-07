@@ -1,0 +1,42 @@
+.consultation {
+    min-height: 680px;
+    padding: 100px 0 92px 0;
+    background: url('../img/bg2.png') center center/cover no-repeat;
+    &__descr {
+        margin-top: 8px;
+        font-weight: 500;
+        font-size: 20px;
+        color: #fff;
+    }
+    .error {
+        border: 1px solid red;
+        text-align: center;
+    }
+    
+    label.error {
+        color: #fff;
+        border: none;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .consultation {
+        min-height: 550px;
+        &__descr {
+            font-size: 14px;
+            text-align: center;
+        }
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .consultation {
+        min-height: 400px;
+        &__descr {
+            font-size: 12px;
+            text-align: center;
+        }
+    }
+}

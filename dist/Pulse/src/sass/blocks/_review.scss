@@ -1,0 +1,62 @@
+@use 'base/variables' as *;
+.review {
+    &-item {
+        &__descr {
+            margin-left: 61px;
+        }
+    }
+    &__item {
+        display: flex;
+        margin-top: 60px;
+    }
+    &__name {
+        font-weight: 700;
+        font-size: 18px;
+        color: #0d0d0d;
+        margin-bottom: 0;
+        &__descr {
+            font-weight: 500;
+            font-size: 14px;
+            color: #646464;
+            margin-top: 0;
+        }
+    }
+    &__descr {
+        margin-top: 10px;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 150%;
+        color: #0d0d0d;
+    }
+    img{
+        width: 169px;
+        height: 169px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .review {
+        &__item {
+            margin-top: 45px;
+        }
+        img {
+            width: 80px;
+            height: 80px;
+        }
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .review {
+        &-item {
+            &__descr {
+                margin-left: 10px;
+            }
+        }
+        img {
+            width: 40px;
+            height: 40px;
+        }
+    }
+}
+

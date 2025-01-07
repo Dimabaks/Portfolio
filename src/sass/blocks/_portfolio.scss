@@ -1,0 +1,25 @@
+@use 'base/variables' as *;
+@use 'base/mixins' as *;
+
+.portfolio {
+    padding-top: 120px;
+    &__wrapper {
+        margin-top: 60px;
+        display: grid;
+        grid-template-columns: repeat(3, 269px);
+        grid-auto-rows: 269px;
+        column-gap: 10px;
+        justify-content: center;
+        img {
+            width: 269px;
+            height: 269px;
+            object-fit: cover;
+        }
+    }
+    &__item {
+        transition: 0.6s all;
+        &:hover {
+            transform: scale(1.05);
+        }
+    }
+}

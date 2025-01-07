@@ -1,0 +1,36 @@
+@use 'base/variables' as *;
+@use 'base/animations' as *;
+@use 'blocks/promo' as *;
+@use 'blocks/_header.scss' as *;
+@use 'blocks/buttons' as *;
+@use 'blocks/adventages' as *;
+@use 'blocks/titles' as *;
+@use 'blocks/consultation' as *;
+@use 'blocks/forms' as *;
+@use 'blocks/carousel' as *;
+@use 'blocks/catalog' as *;
+@use 'blocks/review' as *;
+@use 'blocks/footer' as *;
+@use 'blocks/modal' as *;
+@use 'blocks/pageup' as *;
+
+* {
+    font-family: 'Museo Sans Cyrl', sans-serif;
+}
+.container {
+    max-width: 950px;
+    margin: 0 auto;
+    position: relative;
+}
+
+@media screen and (max-width:768px) {
+   .container {
+    max-width: 650px;
+   }
+}
+
+@media screen and (max-width: 375px) {
+    .container {
+        max-width: 300px;
+    }
+}
